@@ -15,20 +15,20 @@ const MaskMessage = () => {
           WebkitMaskSize: `${size}px ${size}px`,
         }}
         transition={{ type: 'tween', ease: 'backOut' }}
-        className='mask absolute flex h-full w-full cursor-default items-center justify-center text-pink-100'
+        className='mask absolute flex h-full w-full cursor-default items-center justify-center p-4 text-pink-100'
       >
         <p
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className='max-w-screen-lg text-[64px] font-bold leading-[66px]'
+          className='max-w-screen-lg text-[64px] font-bold leading-[66px] max-sm:text-5xl'
         >
           {`Would you marry me 💍 and spend the rest of your life with me. You are
           all I need.`}
         </p>
       </motion.div>
 
-      <div className='main flex h-full w-full cursor-default items-center justify-center text-pink-100'>
-        <p className='max-w-screen-lg text-[64px] font-bold leading-[66px]'>
+      <div className='main flex h-full w-full cursor-default items-center justify-center p-4 text-pink-100'>
+        <p className='max-w-screen-lg text-[64px] font-bold leading-[66px] max-sm:text-5xl'>
           {`I love you sweetie 💕 I can't imagine my life without you. You are my
           sunshine ☀️`}
         </p>
