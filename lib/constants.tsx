@@ -1,4 +1,3 @@
-import { Birthday } from '@/components/birthdays/birthday';
 import {
   ChartBar,
   CirclePlus,
@@ -161,7 +160,7 @@ export const colors = [
   '#7C00FE',
 ];
 
-export const BIRTHDAYS: Birthday[] = [
+export const BIRTHDAYS = [
   {
     month: 'January',
     people: [
