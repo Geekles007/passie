@@ -2,12 +2,14 @@ import styles from './style.module.scss';
 import { motion } from 'framer-motion';
 import { menuSlide } from '@/lib/constants';
 import Link from 'next/link';
-import LinkItem from '@/components/nav/link';
-import Curve from '@/components/curve';
+import LinkItem from '@/components/header/nav/link';
+import Curve from '@/components/header/curve';
+import { forwardRef, RefObject } from 'react';
 
 type NavProps = {};
 
-const Nav = ({}: NavProps) => {
+// eslint-disable-next-line react/display-name
+const Nav = forwardRef(({}: NavProps, ref) => {
   const links = [
     {
       title: 'Home',
@@ -33,6 +35,7 @@ const Nav = ({}: NavProps) => {
       exit={'hide'}
       initial={'initial'}
       className={styles.menu}
+      ref={ref as RefObject<HTMLDivElement>}
     >
       <div className={styles.body}>
         <div className={styles.nav}>
@@ -55,6 +58,6 @@ const Nav = ({}: NavProps) => {
       <Curve />
     </motion.div>
   );
-};
+});
 
 export default Nav;

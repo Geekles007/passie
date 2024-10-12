@@ -1,16 +1,25 @@
-.button {
-  @apply w-20 h-20 bg-blue-500 absolute right-4 top-4 rounded-full flex flex-col items-center justify-center gap-3 z-10;
+.header {
+  @apply fixed flex w-full justify-end p-2.5;
+  box-sizing: border-box;
+  z-index: 1;
+  mix-blend-mode: difference;
 
-  .line {
-    @apply w-8 h-0.5 bg-white rounded-full transition-all duration-300;
+  .button {
+    @apply relative flex cursor-pointer flex-col gap-3 rounded-full p-[30px];
 
-    &.active {
-      &:nth-child(1) {
-        @apply rotate-45 translate-y-[.42rem];
-      }
+    .line {
+      @apply block h-0.5 w-8 rounded-full transition-all duration-300;
+      mix-blend-mode: difference;
+      background-color: white;
 
-      &:nth-child(2) {
-        @apply -rotate-45 -translate-y-[.42rem];
+      &.active {
+        &:nth-child(1) {
+          @apply translate-y-[.42rem] rotate-45;
+        }
+
+        &:nth-child(2) {
+          @apply -translate-y-[.42rem] -rotate-45;
+        }
       }
     }
   }
