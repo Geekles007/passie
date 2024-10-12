@@ -22,15 +22,15 @@ const MaskMessage = () => {
           onMouseLeave={() => setHovered(false)}
           className='max-w-screen-lg text-[64px] font-bold leading-[66px]'
         >
-          Would you marry me 💍 and spend the rest of your life with me. You are
-          all I need.
+          {`Would you marry me 💍 and spend the rest of your life with me. You are
+          all I need.`}
         </p>
       </motion.div>
 
       <div className='main flex h-full w-full cursor-default items-center justify-center text-pink-100'>
         <p className='max-w-screen-lg text-[64px] font-bold leading-[66px]'>
-          I love you sweetie 💕 I can't imagine my life without you. You are my
-          sunshine ☀️
+          {`I love you sweetie 💕 I can't imagine my life without you. You are my
+          sunshine ☀️`}
         </p>
       </div>
     </div>
